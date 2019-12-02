@@ -4,18 +4,30 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default (props) => {
 	const { population, climate, terrain } = props;
 	return (
-		<Container className="p-4 pr-5 pl-5">
-			<Row>
-				<Col>Population:</Col>
-				<Col>{population}</Col>
+		<Container className=" text-center">
+			<Row className="p-3">
+				<Col>
+					<div className="title-info">Population</div>
+					<div className="desc-info">
+						<b>{population}</b>
+					</div>
+				</Col>
 			</Row>
-			<Row>
-				<Col>Climate:</Col>
-				<Col>{climate}</Col>
+			<Row className="p-3">
+				<Col>
+					<div className="title-info">Climate</div>
+					<div className="desc-info">
+						<b>{climate}</b>
+					</div>
+				</Col>
 			</Row>
-			<Row>
-				<Col>Terrain:</Col>
-				<Col>{terrain}</Col>
+			<Row className="p-3">
+				<Col>
+					<div className="title-info">Terrain</div>
+					<div className="desc-info">
+						<b>{terrain}</b>
+					</div>
+				</Col>
 			</Row>
 		</Container>
 	);
